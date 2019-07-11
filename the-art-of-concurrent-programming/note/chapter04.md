@@ -1,3 +1,4 @@
+## 简介
 ### 为什么使用多线程    
 - 更多的处理器核心  
 - 更快的响应时间   
@@ -18,3 +19,10 @@
  - TIME_WAITING   超时等待状态
  - TERMINATED     终止状态
  ![Java线程状态变化](./img/thread-status.jpg)
+ ### Daemon线程   
+    `Daemon`线程是一种支持型线程，因为它主要被用作程序中后台调度以及支持性工作。这
+    意味着，当一个Java虚拟机中不存在非Daemon线程的时候，Java虚拟机将会退出。可以通过调
+    用`Thread.setDaemon(true)`将线程设置为Daemon线程。
+    
+ **注意　在构建Daemon线程时，不能依靠finally块中的内容来确保执行关闭或清理资源
+ 的逻辑。**
