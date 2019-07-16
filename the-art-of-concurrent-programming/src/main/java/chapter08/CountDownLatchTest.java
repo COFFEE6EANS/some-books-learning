@@ -2,6 +2,7 @@ package chapter08;
 
 import chapter04.SleepUtils;
 
+import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
@@ -29,4 +30,5 @@ public class CountDownLatchTest {
             e.printStackTrace();
         }
     }
+
 }
