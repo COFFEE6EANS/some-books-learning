@@ -5,3 +5,5 @@
 [chapter04 Java并发编程基础](./chapter04.md)      
 [chapter05 Java中的锁](./chapter05.md)     
 [chapter06 Java并发容器和框架](./chapter06.md)     
+[chapter07 Java中的13个原子操作类](./chapter07.md)     
+[chapter08 Java的并发工具类](./chapter08.md)     
