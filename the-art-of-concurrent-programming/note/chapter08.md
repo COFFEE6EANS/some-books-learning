@@ -1,7 +1,7 @@
 ## Java中的并发工具类
- 1. [CountDownLatch（线程计数器）](###线程计数器CountDownLatch)
- 2. [CyclicBarrier（同步屏障）](###同步屏障CyclicBarrier)
- 3. [Semaphoree（信号量）控制并发线程数](###控制并发线程数的Semaphore)
+ 1. [CountDownLatch（线程计数器）](#线程计数器CountDownLatch)
+ 2. [CyclicBarrier（同步屏障）](#同步屏障CyclicBarrier)
+ 3. [Semaphoree（信号量）控制并发线程数](#控制并发线程数的Semaphore)
  4. [Exchanger](#jump)
 ### 线程计数器CountDownLatch 
 `CountDownLatch`允许一个或多个线程等待其他线程完成操作。    
