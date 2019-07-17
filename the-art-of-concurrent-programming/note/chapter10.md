@@ -121,7 +121,7 @@ public ThreadPoolExecutor(int corePoolSize,        //核心线程池大小
 
 **注意：在高并发情况下，使用`FixedThreadPool`作为线程池的时候，当并发量过大，可能会出现线程积压，从而撑破内存**
 **注意：在使用`FixedThreadPool`作为线程池并与CyclicBarrier结合使用的时候，当CyclicBarrier的初始化`parties`参数大于`FixedThreadPool`的
-`nThreads`的大小时，会发生线程阻塞**
+`nThreads`的大小时，会发生线程阻塞，[示例代码](../src/main/java/chapter10/ThreadPoolExecutorText)**
 ## SingleThreadExecutor详解
 SingleThreadExecutor是使用单个worker线程的Executor。     
 ```text
