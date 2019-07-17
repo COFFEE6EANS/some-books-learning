@@ -12,8 +12,9 @@ public class ExecutorTest {
 
     public void threadPoolExecutor() {
 
-//        ExecutorService executorService = Executors.newFixedThreadPool()
+        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(1);
 
+        ExecutorService singleThreadExecutor = Executors.newSingleThreadExecutor();
 
     }
 }
