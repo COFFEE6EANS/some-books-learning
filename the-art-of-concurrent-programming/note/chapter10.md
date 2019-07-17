@@ -121,7 +121,7 @@ public ThreadPoolExecutor(int corePoolSize,        //核心线程池大小
 
 **注意：在高并发情况下，使用`FixedThreadPool`作为线程池的时候，当并发量过大，可能会出现线程积压，从而撑破内存**
 **注意：在使用`FixedThreadPool`作为线程池并与CyclicBarrier结合使用的时候，当CyclicBarrier的初始化`parties`参数大于`FixedThreadPool`的
-`nThreads`的大小时，会发生线程阻塞，[示例代码](../src/main/java/chapter10/ThreadPoolExecutorText)**
+`nThreads`的大小时，会发生线程阻塞，[示例代码](../src/main/java/chapter10/ThreadPoolExecutorTest.java)**
 ## SingleThreadExecutor详解
 SingleThreadExecutor是使用单个worker线程的Executor。     
 ```text
@@ -150,3 +150,30 @@ SynchronousQueue是一个没有容量的阻塞队列，它就相当于一个中�
 **CachedThreadPool使用没有容量的SynchronousQueue作为线程池的工作队列，但 CachedThreadPool的maximumPool是无界的。
 这意味着，如果主线程提交任务的速度高于 maximumPool中线程处理任务的速度时，CachedThreadPool会不断创建新线程。极端情况下， 
 CachedThreadPool会因为创建过多线程而耗尽CPU和内存资源。**
+
+# ScheduledThreadPoolExecutor详解
+ScheduledThreadPoolExecutor继承自ThreadPoolExecutor。它主要用来在给定的延迟之后运行任务，或者定期执行任务。
+ScheduledThreadPoolExecutor的功能与Timer类似。
+
+此处省略一千字，lalalala    
+
+# FutureTask详解
+Future接口和实现Future接口的FutureTask类，代表异步计算的结果。
+
+此处省略一千字，lalalala  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,11 +9,9 @@ import java.util.concurrent.*;
  * @date created in  2019/7/17
  * @desc
  */
-public class ThreadPoolExecutorText {
+public class ThreadPoolExecutorTest {
     public static void main(String[] args) throws Exception {
         ExecutorService fixedThreadPool = Executors.newFixedThreadPool(5);
-        ExecutorService singleThreadExecutor = Executors.newSingleThreadExecutor();
-        ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
         long start = System.currentTimeMillis();
 //        CountDownLatch countDownLatch = new CountDownLatch(10);
         CyclicBarrier barrier = new CyclicBarrier(6);
