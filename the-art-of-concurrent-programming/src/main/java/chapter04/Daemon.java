@@ -5,7 +5,7 @@ public class Daemon {
         Thread thread = new Thread(new DaemonRunner(), "DaemonRunner");
         thread.setDaemon(true);
         thread.start();
-        SleepUtils.second(20);
+        SleepUtils.second(5);
     }
 
     static class DaemonRunner implements Runnable {
